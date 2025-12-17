@@ -1,1 +1,64 @@
 /* место для вашего кода */
+* {
+    outline: 1px solid red;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Raleway, sans-serif;
+    background-color: white;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul, 
+ol, 
+blockquote {
+    margin:0;
+    padding: 0;
+}
+
+.content-section {
+    width: 1100px;
+    min-height: 100px;
+    margin: auto;
+}
+
+.content-section_with_fill {
+    color: black;
+    background-color: white;
+}
+
+.content-section_without_fill_dark {
+    color: black;
+}
+
+.content-section_without_fill_light {
+    color: white;
+}
+
+.header {
+    padding: 92px 50px 96px 50px;
+}
+
+.cover{
+    padding: 165px 50px 50px 50px;
+}
+
+.lots{
+    padding: 74px 24px 53px 24px;
+}
+
+.about{
+    padding: 35px 24px 13px 47px;
+}
+
+.footer{
+    padding: 1px 50px 82px 50px;
+}
