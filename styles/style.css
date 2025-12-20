@@ -1,77 +1,77 @@
-.content-section {
-    width: 1100px;
-    min-height: 100px;
-    margin: auto;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 183px;
 }
 
-.content-section__with__fill {
-    color: black;
-    background-color: white;
+.content--section {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.content-section__without__fill__dark {
-    color: black;
-}
-
-.content-section__without__fill__light {
-    color: white;
-}
-
+/*шапка*/
 .header {
-    display: grid;
-    grid-template-columns: 1.51fr 2fr 1.5fr;
-    align-items: center;
-    padding: 92px 50px 96px 50px;
+  display: grid;
+  grid-template-columns: 1.51fr 2fr 1.5fr;
+  align-items: center;
+  padding: 92px 50px 96px 50px;
 }
 
-.header__menu__list {
-    display: flex;
-    gap: 32px;
-    list-style: none;
+.menu__link {
+  display: flex;
+  gap: 32px;
 }
 
-.header__menu__link {
-    color: black;
-    font-size: 18px;
-    white-space: nowrap;
+.menu--text {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.menu__link--active {
+  text-decoration: none;
+}
+
+.menu__link--no--mark {
+  list-style: none;
+}
+
+.menu__link--mark {
+  list-style: circle;
 }
 
 .header__logo {
     display: block;
     justify-self: center;
     align-self: center;
-    width: 148;
+    width: 140px;
 }
 
 .header__logo__image {
     width: 100%;
 }
 
-.header__menu__item__active.header__menu__link {
-    text-decoration: none;
-}
-
-.address {
+.contacts {
   font-style: inherit;
 }
 
-.header__address {
+.header__contacts {
   justify-self: end;
   font-style: inherit;
 }
 
-.address__item {
+.contacts__item {
   display: block;
   font-size: 18px;
   line-height: 1.35;
   text-underline-position: under;
 }
 
-.address__address-text {
+.contacts__item--text {
   font-size: 18px;
   line-height: 1.35;
 }
 
+/*картинка*/
 .cover{
     min-height: 757px;
     padding: 165px 50px 50px 50px;
@@ -112,6 +112,7 @@
     text-align: right;
 }
 
+/*лоты*/
 .lots{
   padding: 0 50px;
 }
@@ -133,10 +134,26 @@
     font-size: 20px;
 }
 
+.cover__card-lot-01 {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.cover__card-lot-02 {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.cover__card-lot-03 {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+/*текст*/
 .about{
     padding: 35px 24px 13px 47px;
 }
 
-.footer{
-    padding: 1px 50px 82px 50px;
+/*подвал*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 180px 50px 80px;
 }

@@ -9,32 +9,29 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/global.css">
   </head>
-  <body class="body">
-    <header class="header content-section">
+  <body>
+    <header class="header content--section">
       <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item-active">
-            <a class="header__menu-link">главная</a>
+        <ul class="menu__link">
+          <li class="menu__link--no--mark">
+            <a class="menu--text menu__link--active" href="#0">главная</a>
           </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#0">посмотреть лоты</a>
+          <li class="menu__link--mark">
+            <a class="menu--text" href="#0">посмотреть лоты</a>
           </li>
-           <li class="header__menu-item">
-            <a class="header__menu-link" href="#0">об аукционе</a>
+          <li class="menu__link--mark">
+            <a class="menu--text" href="#0">об аукционе</a>
           </li>
         </ul>
       </nav>
       <a class="header__logo">
-        <img
-        class ="header__logo-image"
-        src="./images/logo-black.svg"
-        alt="логотип проекта"
-        />
+        <img class ="header__logo-image" src="./images/logo-black.svg" alt="логотип проекта"/>
       </a>
-        <address class="header__address">
-          <a class="address__item text-link" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="address__item text-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p class="address__address-text">наб. Принсенграхт 263-265,<br />Амстердам</p>
+        <address class="header__contacts">
+          <a class="contacts__item" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="contacts__item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p class="contacts__item--text">наб. Принсенграхт 263-265,</p>
+          <p class="contacts__item--text">Амстердам</p>
       </address>
       </header>
     <main class="content">
@@ -52,12 +49,15 @@
     <section class="lots content-section">
       <div class="lots__heading"> 
          <h2 class="lots__heading">Лоты</h2></div>
-        <h3 class="card__heading">Фильм режиссёра, который бросил киношколу</h2>
-          <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-        <h3 class="card__heading">Книга, где описан один скучный день из жизни рекламного агента</h2>
-          <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-        <h3 class="card__heading">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
-          <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+         <article class="cover__card-lot-01"
+          <h3 class="card__heading">Фильм режиссёра, который бросил киношколу</h3>
+            <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            <article class="cover__card-lot-02"
+          <h3 class="card__heading">Книга, где описан один скучный день из жизни рекламного агента</h2>
+            <p class="card__text">НОбъёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              <article class="cover__card-lot-03"
+          <h3 class="card__heading">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
+            <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
     </section>
     <section class="about content-section"></section>
     <div class="about__column about__column_text">
@@ -82,6 +82,20 @@
           </div>
         </div>
     </main>
-    <footer class="footer content-section"></footer>
+    <footer class="footer footer--section">
+      <nav class="footer--menu"> 
+          <ul class="menu__link">
+          <a class="menu--text menu__link--active" href="#0">главная</a>
+          <a class="menu--text" href="#0">посмотреть лоты</a>
+          <a class="menu--text" href="#0">об аукционе</a>
+        </ul>
+      </nav>
+          <address class="footer--section">
+          <a class="contacts__item" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="contacts__item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p class="contacts__item--text">наб. Принсенграхт 263-265,</p>
+          <p class="contacts__item--text">Амстердам</p>
+      </address>
+    </footer>
   </body>
 </html>
